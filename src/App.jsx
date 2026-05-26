@@ -6,6 +6,8 @@ import Skills from './components/Skills'
 import Portfolio from './components/Portfolio'
 import Contact from './components/Contact'
 import Footer from './components/Footer'
+import Experience from './components/Experience'
+import Testimonials from './components/Testimonials'
 import ManagementBiProject from './projects/ManagementBiProject'
 import ExecutiveDashboardProject from './projects/ExecutiveDashboardProject'
 import RestApiProject from './projects/RestApiProject'
@@ -15,8 +17,10 @@ function HomePage() {
     <>
       <Hero />
       <About />
+      <Experience />
       <Skills />
       <Portfolio />
+      <Testimonials />
       <Contact />
     </>
   )
