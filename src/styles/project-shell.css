@@ -30,10 +30,12 @@
 }
 
 .project-header-title {
+  font-family: var(--font-display);
   font-size: 2.5rem;
-  font-weight: 700;
+  font-weight: 800;
   margin-bottom: 20px;
-  line-height: 1.2;
+  line-height: 1.15;
+  letter-spacing: -1px;
 }
 
 .project-header-description {
@@ -52,13 +54,15 @@
 }
 
 .project-section-title {
-  font-size: 1.3rem;
-  font-weight: 600;
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 700;
   margin-bottom: 20px;
   color: var(--text-primary);
   display: flex;
   align-items: center;
   gap: 10px;
+  letter-spacing: -0.3px;
 }
 
 .project-section-title-icon {
@@ -75,11 +79,11 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  padding: 14px 18px;
+  padding: 13px 16px;
   background: var(--bg-card);
   border-radius: var(--radius-sm);
   border: 1px solid var(--border-color);
-  font-size: 0.9rem;
+  font-size: 0.875rem;
   color: var(--text-secondary);
   transition: all var(--transition);
 }

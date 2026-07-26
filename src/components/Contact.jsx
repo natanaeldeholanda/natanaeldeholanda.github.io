@@ -13,7 +13,7 @@ export default function Contact() {
   }
 
   return (
-    <section className="section" id="contact">
+    <section className="section contact-section" id="contact">
       <div className="container">
         <div className="section-label">Contato</div>
         <h2 className="section-title">Vamos Trabalhar Juntos</h2>
@@ -22,6 +22,7 @@ export default function Contact() {
         </p>
 
         <div className="contact-content">
+          {/* Info */}
           <div className="contact-info">
             <p className="contact-info-text">
               Se você busca um profissional que une desenvolvimento backend robusto com visão analítica para criar soluções completas, entre em contato.
@@ -30,7 +31,7 @@ export default function Contact() {
             <div className="contact-links">
               <a href={`mailto:${profile.email}`} className="contact-link">
                 <div className="contact-link-icon">
-                  <Mail size={18} />
+                  <Mail size={17} />
                 </div>
                 <div>
                   <div className="contact-link-text">{profile.email}</div>
@@ -40,7 +41,7 @@ export default function Contact() {
 
               <a href={profile.social.linkedin} target="_blank" rel="noopener noreferrer" className="contact-link">
                 <div className="contact-link-icon">
-                  <Linkedin size={18} />
+                  <Linkedin size={17} />
                 </div>
                 <div>
                   <div className="contact-link-text">linkedin.com/in/natanaeldeholanda</div>
@@ -50,7 +51,7 @@ export default function Contact() {
 
               <a href={profile.social.github} target="_blank" rel="noopener noreferrer" className="contact-link">
                 <div className="contact-link-icon">
-                  <Github size={18} />
+                  <Github size={17} />
                 </div>
                 <div>
                   <div className="contact-link-text">github.com/natanaeldeholanda</div>
@@ -60,7 +61,7 @@ export default function Contact() {
 
               <div className="contact-link">
                 <div className="contact-link-icon">
-                  <MapPin size={18} />
+                  <MapPin size={17} />
                 </div>
                 <div>
                   <div className="contact-link-text">{profile.location}</div>
@@ -70,14 +71,16 @@ export default function Contact() {
             </div>
           </div>
 
+          {/* Form */}
           <form className="contact-form" onSubmit={handleSubmit}>
             <h3 className="contact-form-title">Envie uma mensagem</h3>
 
             <div className="form-group">
+              <label className="form-label">Nome</label>
               <input
                 type="text"
                 className="form-input"
-                placeholder="Seu nome"
+                placeholder="Seu nome completo"
                 value={form.name}
                 onChange={(e) => setForm({ ...form, name: e.target.value })}
                 required
@@ -85,10 +88,11 @@ export default function Contact() {
             </div>
 
             <div className="form-group">
+              <label className="form-label">Email</label>
               <input
                 type="email"
                 className="form-input"
-                placeholder="Seu email"
+                placeholder="seu@email.com"
                 value={form.email}
                 onChange={(e) => setForm({ ...form, email: e.target.value })}
                 required
@@ -96,9 +100,10 @@ export default function Contact() {
             </div>
 
             <div className="form-group">
+              <label className="form-label">Mensagem</label>
               <textarea
                 className="form-textarea"
-                placeholder="Sua mensagem"
+                placeholder="Descreva seu projeto ou proposta..."
                 value={form.message}
                 onChange={(e) => setForm({ ...form, message: e.target.value })}
                 required
@@ -107,7 +112,7 @@ export default function Contact() {
 
             <button type="submit" className="btn btn-primary form-submit">
               Enviar Mensagem
-              <Send size={16} />
+              <Send size={15} />
             </button>
           </form>
         </div>

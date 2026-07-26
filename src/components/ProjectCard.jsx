@@ -1,20 +1,28 @@
 import { Link } from 'react-router-dom'
 import { ArrowUpRight, Image as ImageIcon } from 'lucide-react'
 
-export default function ProjectCard({ project }) {
+export default function ProjectCard({ project, index }) {
+  const num = String(index + 1).padStart(2, '0')
+
   return (
     <div className="project-card">
-      {project.image ? (
-        <div
-          className="project-card-image"
-          style={{ backgroundImage: `url(${project.image})` }}
-        />
-      ) : (
-        <div className="project-card-image-placeholder">
-          <ImageIcon size={32} />
-        </div>
-      )}
+      {/* Imagem */}
+      <div className="project-card-image-wrap">
+        <span className="project-card-number">Project {num}</span>
 
+        {project.image ? (
+          <div
+            className="project-card-image-div"
+            style={{ backgroundImage: `url(${project.image})` }}
+          />
+        ) : (
+          <div className="project-card-image-placeholder">
+            <ImageIcon size={28} />
+          </div>
+        )}
+      </div>
+
+      {/* Body */}
       <div className="project-card-body">
         <h3 className="project-card-title">{project.title}</h3>
         <p className="project-card-description">{project.shortDescription}</p>
@@ -28,7 +36,7 @@ export default function ProjectCard({ project }) {
         <div className="project-card-footer">
           <Link to={project.link} className="project-card-link">
             Ver Detalhes
-            <ArrowUpRight size={16} />
+            <ArrowUpRight size={15} />
           </Link>
         </div>
       </div>
