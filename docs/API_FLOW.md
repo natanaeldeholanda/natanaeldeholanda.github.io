@@ -16,14 +16,21 @@ Stats (stats.js)
 └── Array<{ label, value, suffix }>
 
 About (about.js)
-└── paragraphs: string[]
+└── paragraphs: string[] (2 parágrafos)
 
 Skills (skills.js)
 └── Array<{
       category: string,
       icon: string,
-      items: Array<{ name: string, level: number }>
+      items: string[]
     }>
+
+Experience (experience.js)
+├── experience: Array<{ id, role, company, period, description, achievements }>
+└── education: Array<{ id, degree, school, period, description }>
+
+Testimonials (testimonials.js)
+└── Array<{ id, name, role, company, content, avatar }>
 
 Projects (projects.js)
 ├── slug, title, shortDescription, fullDescription
@@ -44,5 +51,5 @@ User click → Router → Component render → data import → display
 
 ## Sem API Externa
 
-- Google Fonts carregada via CDN no `index.html`
+- Google Fonts carregada via @import no `global.css`
 - Imagens em `public/images/` servidas estaticamente pelo Vite

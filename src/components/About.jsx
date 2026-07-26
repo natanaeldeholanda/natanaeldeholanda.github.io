@@ -19,7 +19,12 @@ export default function About() {
         </p>
 
         <div className="about-content">
-          {/* Imagem */}
+          <div className="about-text">
+            {about.paragraphs.map((p, i) => (
+              <p key={i}>{p}</p>
+            ))}
+          </div>
+
           <div className="about-image-wrapper">
             <img
               src="/images/bg/Natanael%202.jpeg"
@@ -35,27 +40,20 @@ export default function About() {
               </div>
             </div>
           </div>
+        </div>
 
-          {/* Texto + highlights */}
-          <div className="about-text">
-            {about.paragraphs.map((p, i) => (
-              <p key={i}>{p}</p>
-            ))}
-
-            <div className="about-highlights">
-              {highlights.map((item) => {
-                const Icon = item.icon
-                return (
-                  <div key={item.label} className="about-highlight">
-                    <div className="about-highlight-icon">
-                      <Icon size={20} />
-                    </div>
-                    <h4>{item.label}</h4>
-                  </div>
-                )
-              })}
-            </div>
-          </div>
+        <div className="about-highlights">
+          {highlights.map((item) => {
+            const Icon = item.icon
+            return (
+              <div key={item.label} className="about-highlight">
+                <div className="about-highlight-icon">
+                  <Icon size={20} />
+                </div>
+                <h4>{item.label}</h4>
+              </div>
+            )
+          })}
         </div>
       </div>
     </section>

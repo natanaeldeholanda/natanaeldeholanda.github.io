@@ -3,8 +3,8 @@ const profile = {
   email: 'natan.holanda@gmail.com',
   phone: '+55 (85) 99641-2357',
   role: 'Especialista em Engenharia de Software & Arquitetura de Dados',
-  tagline: 'Arquitetura de Sistemas de Alta Performance & Inteligência Estratégica de Dados',
-  summary: 'Engenheiro de Software Sênior com vasta trajetória na concepção de sistemas distribuídos e ecossistemas analíticos de alto impacto. Especialista em unir a solidez da arquitetura Java/Backend à inteligência de dados estratégica para impulsionar negócios.',
+  tagline: 'Arquitetura Java que gera inteligência de negócio.',
+  summary: 'Engenheiro de software que une backend robusto a dados estratégicos. 8+ anos transformando requisitos complexos em sistemas que geram decisões reais.',
   location: 'Fortaleza, CE - Brasil',
   social: {
     github: 'https://github.com/natanaeldeholanda',

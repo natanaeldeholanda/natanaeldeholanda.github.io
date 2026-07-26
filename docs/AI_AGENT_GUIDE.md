@@ -11,9 +11,11 @@ src/
 ├── components/Navbar.jsx        # Navegação fixa
 ├── components/Hero.jsx          # Seção de abertura
 ├── components/About.jsx         # Seção sobre
+├── components/Experience.jsx    # Timeline unificada (trabalho + educação)
 ├── components/Skills.jsx        # Seção habilidades
 ├── components/Portfolio.jsx     # Grid de projetos
 ├── components/ProjectCard.jsx   # Card individual
+├── components/Testimonials.jsx  # Depoimentos
 ├── components/Contact.jsx       # Contato + formulário
 ├── components/Footer.jsx        # Rodapé
 ├── components/ProjectShell.jsx  # Wrapper páginas de projeto
@@ -23,6 +25,8 @@ src/
 ├── data/skills.js               # Skills técnicas
 ├── data/skillIcons.js           # Ícones de skills
 ├── data/projects.js             # Dados dos projetos
+├── data/experience.js           # Experiência e educação
+├── data/testimonials.js         # Depoimentos
 ├── projects/ManagementBiProject.jsx
 ├── projects/ExecutiveDashboardProject.jsx
 ├── projects/RestApiProject.jsx
@@ -30,8 +34,10 @@ src/
 ├── styles/navbar.css
 ├── styles/hero.css
 ├── styles/about.css
+├── styles/experience.css
 ├── styles/skills.css
 ├── styles/portfolio.css
+├── styles/testimonials.css
 ├── styles/contact.css
 ├── styles/footer.css
 ├── styles/project-shell.css

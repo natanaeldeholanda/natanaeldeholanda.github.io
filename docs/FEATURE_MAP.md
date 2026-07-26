@@ -5,12 +5,14 @@
 | Seção | Componente | Arquivo de Dados | Funcionalidades |
 |-------|------------|------------------|-----------------|
 | Navbar | `Navbar.jsx` | — | Monograma NH, scroll transparent→glass, active section via IntersectionObserver, mobile toggle |
-| Hero | `Hero.jsx` | `profile.js`, `stats.js` | Eyebrow, headline Syne, role line, stack chips, stats com separadores, mesh gradient + dot grid |
-| Sobre | `About.jsx` | `about.js` | Grid imagem + texto, frame gradiente, glassmorphism overlay, highlights cards |
-| Skills | `Skills.jsx` | `skills.js` (inline) | 3 categorias com chips + badges Expert/Proficient/Familiar (sem progress bars) |
-| Portfolio | `Portfolio.jsx` | `projects.js` | Grid com primeiro card wide, numeração editorial, image curtain overlay |
-| Contato | `Contact.jsx` | `profile.js` | Info + formulário com labels uppercase (mailto) |
-| Footer | `Footer.jsx` | `profile.js` | Tagline, social links, linha gradiente, stack de tecnologias |
+| Hero | `Hero.jsx` | `profile.js`, `stats.js` | Headline Sora, role line, inline stats, 2 CTAs, mesh gradient, scroll indicator |
+| Sobre | `About.jsx` | `about.js` | Grid texto + imagem, overlay com dot pulse, highlights cards 3-col full-width |
+| Experiência | `Experience.jsx` | `experience.js` | Timeline unificada (trabalho + educação intercalados), scroll reveal CSS |
+| Skills | `Skills.jsx` | `skills.js` (inline) | 3 categorias com chips (sem badges), icons por categoria |
+| Portfolio | `Portfolio.jsx` | `projects.js` | Grid 2-col, image curtain overlay |
+| Depoimentos | `Testimonials.jsx` | `testimonials.js` | Cards com quote + autor, avatar gradiente |
+| Contato | `Contact.jsx` | `profile.js` | Info links + formulário mailto |
+| Footer | `Footer.jsx` | `profile.js` | Tagline, social links circulares, divider, stack tecnologias |
 
 ## Projetos (páginas individuais)
 

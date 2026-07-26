@@ -1,31 +1,35 @@
 import { Link } from 'react-router-dom'
-import { ArrowUpRight, Image as ImageIcon } from 'lucide-react'
+import { ArrowRight, Github } from 'lucide-react'
 
-export default function ProjectCard({ project, index }) {
-  const num = String(index + 1).padStart(2, '0')
+export default function ProjectCard({ project }) {
+  const hasImage = !!project.image
 
   return (
     <div className="project-card">
-      {/* Imagem */}
-      <div className="project-card-image-wrap">
-        <span className="project-card-number">Project {num}</span>
-
-        {project.image ? (
+      <Link to={project.link} className="project-card-image-wrap">
+        {hasImage ? (
           <div
             className="project-card-image-div"
-            style={{ backgroundImage: `url(${project.image})` }}
+            style={{
+              backgroundImage: `url(${project.image})`,
+              backgroundColor: 'var(--bg-elevated)',
+            }}
           />
         ) : (
           <div className="project-card-image-placeholder">
-            <ImageIcon size={28} />
+            <span>{project.title[0]}</span>
           </div>
         )}
-      </div>
+      </Link>
 
-      {/* Body */}
       <div className="project-card-body">
-        <h3 className="project-card-title">{project.title}</h3>
-        <p className="project-card-description">{project.shortDescription}</p>
+        <h3 className="project-card-title">
+          <Link to={project.link}>{project.title}</Link>
+        </h3>
+
+        <p className="project-card-description">
+          {project.shortDescription}
+        </p>
 
         <div className="project-card-tags">
           {project.tags.map((tag) => (
@@ -35,9 +39,20 @@ export default function ProjectCard({ project, index }) {
 
         <div className="project-card-footer">
           <Link to={project.link} className="project-card-link">
-            Ver Detalhes
-            <ArrowUpRight size={15} />
+            Ver detalhes
+            <ArrowRight size={14} />
           </Link>
+          {project.github && (
+            <a
+              href={project.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="project-card-link"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <Github size={15} />
+            </a>
+          )}
         </div>
       </div>
     </div>

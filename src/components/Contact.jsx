@@ -18,14 +18,13 @@ export default function Contact() {
         <div className="section-label">Contato</div>
         <h2 className="section-title">Vamos Trabalhar Juntos</h2>
         <p className="section-subtitle">
-          Tem um projeto em mente ou quer trocar uma ideia? Estou aberto a novas oportunidades e colaborações.
+          Tem um projeto em mente? Estou aberto a novas oportunidades e colaborações.
         </p>
 
         <div className="contact-content">
-          {/* Info */}
           <div className="contact-info">
             <p className="contact-info-text">
-              Se você busca um profissional que une desenvolvimento backend robusto com visão analítica para criar soluções completas, entre em contato.
+              Busca um profissional que une backend robusto com visão analítica? Vamos conversar.
             </p>
 
             <div className="contact-links">
@@ -71,7 +70,6 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* Form */}
           <form className="contact-form" onSubmit={handleSubmit}>
             <h3 className="contact-form-title">Envie uma mensagem</h3>
 

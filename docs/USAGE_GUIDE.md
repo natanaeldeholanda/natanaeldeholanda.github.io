@@ -10,7 +10,7 @@ Guia de uso e manutenção do site portfólio de Natanael de Holanda.
 - React Router 6 (SPA com rotas)
 - Lucide React (ícones)
 - CSS puro com variáveis CSS (dark theme)
-- Google Fonts (Inter)
+- Google Fonts: Sora (display) + Outfit (body)
 
 ## 3. Estrutura de Diretórios
 
@@ -37,7 +37,9 @@ Guia de uso e manutenção do site portfólio de Natanael de Holanda.
 | Perfil, contato | `src/data/profile.js` |
 | Hero + números | `src/data/stats.js` |
 | Sobre | `src/data/about.js` |
+| Experiência | `src/data/experience.js` |
 | Skills | `src/data/skills.js` |
+| Depoimentos | `src/data/testimonials.js` |
 | Projetos (cards) | `src/data/projects.js` |
 
 ### 4.2 Sincronização de Docs

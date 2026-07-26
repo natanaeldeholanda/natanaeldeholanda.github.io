@@ -13,8 +13,8 @@ export default function Portfolio() {
         </p>
 
         <div className="projects-grid">
-          {projects.map((project, i) => (
-            <ProjectCard key={project.slug} project={project} index={i} />
+          {projects.map((project) => (
+            <ProjectCard key={project.slug} project={project} />
           ))}
         </div>
       </div>
